@@ -1,6 +1,6 @@
 {
   "name": "@deegital/js-trustup-io-websocket",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Used to connect client side to our websocket microservice.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
