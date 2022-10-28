@@ -1,7 +1,7 @@
 {
-  "name": "@henrotaym/typescript-js-package",
-  "version": "1.0.1-alpha.0",
-  "description": "Typescript js package template.",
+  "name": "@deegital/js-trustup-io-websocket",
+  "version": "0.0.1",
+  "description": "Used to connect client side to our websocket microservice.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henrotaym/typescript-js-package.git"
+    "url": "git+https://github.com/deegitalbe/js-trustup-io-websocket.git"
   },
   "author": "Henrotay Mathieu <mathieu.henrotay@gmail.be>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/henrotaym/typescript-js-package/issues"
+    "url": "https://github.com/deegitalbe/js-trustup-io-websocket/issues"
   },
-  "homepage": "https://github.com/henrotaym/typescript-js-package#readme",
+  "homepage": "https://github.com/deegitalbe/js-trustup-io-websocket#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -42,5 +42,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "laravel-echo": "^1.14.1",
+    "pusher-js": "^7.4.0"
   }
 }
