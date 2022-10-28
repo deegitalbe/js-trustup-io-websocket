@@ -1,5 +1,10 @@
 import Echo from "laravel-echo";
-import { TrustupWebsocketIoConfig } from "./types";
+import Pusher from "pusher-js";
+import { TrustupWebsocketIoConfig, TrustupWebsocketIoWindow } from "./types";
+
+declare let window: TrustupWebsocketIoWindow;
+
+window.Pusher = Pusher;
 
 class TrustupWebsocketIoClient {
   private echoInstance: Echo;
