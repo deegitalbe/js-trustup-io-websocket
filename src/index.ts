@@ -1,14 +1,12 @@
 import Echo from "laravel-echo";
-import Pusher from "pusher-js";
+import { TrustupWebsocketIoConfig } from "./types";
 
-import { TrustupWebsocketIoConfig, TrustupWebsocketIoWindow } from "./types";
+const Pusher = require("pusher-js");
 
-declare let window: TrustupWebsocketIoWindow;
 class TrustupWebsocketIoClient {
   private echoInstance: Echo;
 
   public constructor(config?: TrustupWebsocketIoConfig) {
-    window.Pusher = Pusher;
     // eslint-disable-next-line no-console
     console.log({ Pusher });
     this.echoInstance = new Echo({
