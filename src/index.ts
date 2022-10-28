@@ -1,6 +1,7 @@
 import Echo from "laravel-echo";
 import { TrustupWebsocketIoConfig } from "./types";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Pusher = require("pusher-js");
 
 class TrustupWebsocketIoClient {
@@ -8,7 +9,6 @@ class TrustupWebsocketIoClient {
 
   public constructor(config?: TrustupWebsocketIoConfig) {
     // eslint-disable-next-line no-console
-    console.log({ Pusher });
     this.echoInstance = new Echo({
       broadcaster: "pusher",
       key:
